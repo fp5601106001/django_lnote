@@ -55,7 +55,7 @@ ROOT_URLCONF = 'knowledge_pic.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, "templates")],
         'APP_DIRS': True,                                                           # 设置APP_DIR后，Django会到每个APP的templates目录中寻找模板页：因此需要给模板页建立子文件夹，以防止同名模板的存在。
         'OPTIONS': {
             'context_processors': [
